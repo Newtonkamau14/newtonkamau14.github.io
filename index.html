@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/src/css/style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <ul class="nav-bar-brand">
+                <li><a href="#"><i class="fa-solid fa-code fa-2xl"></i></a></li>
+            </ul>
+            <ul>
+                <li><a href="#skills"><i class="fa-solid fa-screwdriver-wrench"></i>Skills</a></li>
+                <li><a href="#projects"><i class="fa-solid fa-folder"></i>Projects</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-phone"></i>Contact</a></li>
+                <li><a href="https://drive.google.com/drive/u/0/folders/1szgb0mQnW8m_AoZfZVULZPtEUX_jeLRG" target="_blank"><i class="fa-regular fa-file-lines"></i>Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <div id="intro">
+            <h1>Hi there! </h1>
+            <p>My name is Newton. I'm a skilled web developer with a focus on back-end development using Node.js and Express. I'm well-versed in integrating APIs, working with databases such as MongoDB and MySQL, and ensuring the scalability and security of my applications. I'm also familiar with React, allowing me to create full-stack web solutions.I'm always eager to learn and stay up-to-date with the latest development trends and techniques. </p>
+        </div>
+        <div id="skills">
+            <h1 class="div-title">Skills:</h1>
+            <img src="./src/img/html.svg" alt="html">
+            <img src="./src/img/css.svg" alt="">
+            <img src="./src/img/js.svg" alt="">
+            <img src="./src/img/nodejs.svg" alt="">
+            <img src="./src/img/mysql.svg" alt="">
+            <img src="./src/img/mongodb.svg" alt="">
+        </div>
+
+        <h1 class="div-title">Projects:</h1>
+
+        <div class="projects" id="projects">
+
+            <div class="card">
+                <img src="./src/img/todoapp.png" alt="" srcset="">
+                <a href="https://todoapp-375619.ue.r.appspot.com/"><h3>Todo App</h3></a>
+                <p>A todo app built using express,mongodb and deployed on Google's App Engine</p>
+            </div>
+
+            <div class="card">
+                <img src="./src/img/expresssql.png" alt="" srcset="">
+                <a href="https://github.com/Newtonkamau14/Express-Sql"><h3>Express Sql</h3></a>
+                <p>A CRUD app using express and MySQL. </p>
+            </div>
+
+            <div class="card">
+                <img src="./src/img/fakerapi.png" alt="" srcset="">
+                <a href="https://github.com/Newtonkamau14/Fakerapi"><h3>Faker Api</h3></a>
+                <p>Using express to make HTTPS requests to an external api.</p>
+            </div>
+
+            
+        </div>
+
+        <h1 class="div-title">Contact Me:</h1>
+
+        <div id="contact">
+            <a href="https://github.com/Newtonkamau14"><img src="./src/img/github3.svg" alt=""></a>
+            <a href="#"><img src="./src/img/linkedin.svg" alt=""></a>
+        </div>
+
+
+        <span><h3 class="other-contact">Phone No: + 254712603849</h3></span>
+        <span><h3 class="other-contact">Email: newtonkamau14@gmail.com</h3></span>
+
+        <footer class="footer">
+            <p>Newton &#169; <span class="yr"></span></p>
+        </footer>
+    </div>
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
