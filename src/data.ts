@@ -10,6 +10,7 @@ import github from "./assets/github3.svg";
 import linkedin from "./assets/linkedin.svg";
 import kenyaopendata from "./assets/kenyaopendata.png";
 import expresstsmysql from "./assets/express-ts-mysql.png";
+import pamaiagent from "./assets/pam-ai-agent.png";
 
 const projects = [
   {
@@ -29,6 +30,15 @@ const projects = [
     title: "express-ts-mysql-cli",
     description:
       "A CLI app to scaffold an Express application with MySQL,Typescript and Sequelize as the ORM.",
+  },
+  {
+    id: 3,
+    img: pamaiagent,
+    imgAltText: "pam ai agent",
+    projectLink: "https://pam-golding-ai-agent.onrender.com",
+    title: "Pam ai agent",
+    description:
+      "Using a voiceflow chatbot in a React App.It also uses chatgpt to generate responses.",
   },
 ];
 
