@@ -169,10 +169,13 @@ header {
 .projects {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
 }
 
 .card {
   background-color: #09091b;
+  width: calc(33.33% - 20px);
   max-width: 400px;
   padding: 10px;
   border: none;

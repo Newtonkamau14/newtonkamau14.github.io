@@ -28,10 +28,11 @@ function App() {
         </div>
 
         <h1 className="div-title">Projects:</h1>
-        <div className="projects" id="projects"></div>
-        {projects.map((project) => (
-          <Card key={project.id} project={project} />
-        ))}
+        <div className="projects" id="projects">
+          {projects.map((project) => (
+            <Card key={project.id} project={project} />
+          ))}
+        </div>
 
         <h1 className="div-title">Contact Me:</h1>
         <div id="contact">
