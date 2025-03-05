@@ -1,0 +1,39 @@
+[
+  {
+    "personalDetails": {
+      "name": "Newton Kamau",
+      "city": "Nairobi",
+      "country": "Kenya",
+      "resumeUrl": "https://drive.google.com/file/d/1qb3TPozXvG08kbIieGGw7Zo_yJsrwvqK/view?usp=sharing"
+    }
+  },
+  {
+    "about": "Born and raised in Nairobi. If I'm not behind the computer, I'm usually in the kitchen experimenting with new recipes or out capturing moments through a camera lens."
+  },
+  {
+    "education": [
+      {
+        "school": "Jomo Kenyatta University of Agriculture and Technology",
+        "program": "Bachelor of Science in Computer Technology"
+      }
+    ]
+  },
+  {
+    "workHistory": [
+      {
+        "company": "Botus Tech",
+        "jobTitle": "Frontend Developer",
+        "jobDescription": "Working on user interfaces for internal tools and other products.",
+        "location": "Remote",
+        "duration": "Jan.2025 - Present"
+      },
+      {
+        "company": "Jomo Kenyatta University of Agriculture and Technology",
+        "jobTitle": "ICT Intern",
+        "jobDescription": "Made an IoT device for grain storage for measuring humidity and temperature levels with other team members.",
+        "location": "Juja,Kiambu",
+        "duration": "Jan.2023 - March.2023"
+      }
+    ]
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "projects": [
+    {
+      "type": "Application",
+      "name": "Kenya Open Data",
+      "description": "It is an API that gives detailed information about each county, including population, size, leadership, and capital city.Also has data of constituencies.",
+      "image": "/kenyaopendata.webp",
+      "githubUrl": "https://github.com/Newtonkamau14/Kenya-Open-Data",
+      "demoUrl": "https://newtonkamau14.github.io/Kenya-Open-Data/docs/intro",
+      "techStack": ["ReactJS", "Node.js", "Express", "MySQL"]
+    },
+    {
+      "type": "Application",
+      "name": "Recipe App",
+      "description": "It is a recipe app built with react and sanity.I use it to manage and view my own recipes.",
+      "image": "/recipeapp.webp",
+      "githubUrl": "https://github.com/Newtonkamau14/Recipe-App",
+      "demoUrl": "#",
+      "techStack": ["NextJS", "STRAPI"]
+    },
+    {
+      "type": "Application",
+      "name": "express-ts-mysql-cli",
+      "description": "A CLI app to scaffold an Express application with MySQL,Typescript and Sequelize as the ORM.",
+      "image": "/express-ts-mysql.webp",
+      "githubUrl": "https://github.com/Newtonkamau14/express-ts-mysql-cli",
+      "demoUrl": "#",
+      "techStack": ["Javascript"]
+    }
+  ]
+}
