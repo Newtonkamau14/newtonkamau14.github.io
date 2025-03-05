@@ -11,5 +11,3 @@ pnpm dev
 # or
 bun dev
 ```
-
-- [ ] Remove  dangerouslyAllowSVG,contentSecurityPolicy from next.config.ts when deploying only to be used in dev mode.
