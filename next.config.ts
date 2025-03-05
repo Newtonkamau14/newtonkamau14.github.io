@@ -1,5 +1,6 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === 'production';
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
@@ -9,9 +10,10 @@ const nextConfig: NextConfig = {
         pathname: "/**",
       },
     ],
-    dangerouslyAllowSVG: true, // Enable SVG support
-    contentSecurityPolicy: "default-src 'self'; img-src * data: blob:;",
   },
+  assetPrefix: isProd ? '/newtonkamau14.github.io/' : '',
+  basePath: isProd ? '/newtonkamau14.github.io' : '',
+  output: 'export'
 };
 
 export default nextConfig;
