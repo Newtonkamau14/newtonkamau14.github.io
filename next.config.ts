@@ -1,17 +1,10 @@
 import type { NextConfig } from "next";
 
 const isProd = process.env.NODE_ENV === 'production';
-const nextConfig: NextConfig = {
+const nextConfig:NextConfig = {
   reactStrictMode: true,
   images: {
-    unoptimized: true,
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "placehold.co",
-        pathname: "/**",
-      },
-    ],
+    unoptimized: true, 
   },
   assetPrefix: isProd ? '/newtonkamau14.github.io/' : '',
   basePath: isProd ? '/newtonkamau14.github.io' : '',
