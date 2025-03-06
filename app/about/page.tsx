@@ -66,7 +66,7 @@ export default function About() {
 
         <div className="flex flex-col gap-4">
           <a
-            href={`mailto:${contact.email}`}
+            href="mailto:newtonkamau14@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2"
