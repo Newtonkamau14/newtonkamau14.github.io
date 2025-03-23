@@ -1,8 +1,8 @@
-import { getContact } from "@/lib/contact";
-import { Contact } from "@/types";
+import { getContent } from "@/lib/content";
+import { Content } from "@/types";
 
 export default function Footer() {
-  const contact: Contact = getContact();
+  const content: Content = getContent();
   const year = new Date().getFullYear();
   return (
     <footer className="bg-light2 dark:bg-dark2 py-4 h-48">
@@ -12,14 +12,14 @@ export default function Footer() {
         </div>
         <div className="flex gap-4">
           <a
-            href={contact.github}
+            href={content[0].personalDetails.githubUrl}
             target="_blank"
             className="text-black dark:text-white"
           >
             GitHub
           </a>
           <a
-            href={contact.linkedIn}
+            href={content[0].personalDetails.linkedInUrl}
             target="_blank"
             className="text-black dark:text-white"
           >
