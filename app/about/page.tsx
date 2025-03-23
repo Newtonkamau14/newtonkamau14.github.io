@@ -4,12 +4,10 @@ import { IoDocumentTextOutline } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
 import { getContent } from "@/lib/content";
 import { Content } from "@/types";
-import { getContact } from "@/lib/contact";
-import { Contact } from "@/types";
+
 
 export default function About() {
   const content: Content = getContent();
-  const contact: Contact = getContact();
 
   return (
     <main className="min-h-screen flex flex-col justify-center lg:w-3/5 lg:mx-auto px-4 mt-20">
@@ -75,7 +73,7 @@ export default function About() {
             Email me!
           </a>
           <a
-            href={contact.github}
+            href={content[0].personalDetails.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2"
@@ -84,7 +82,7 @@ export default function About() {
             Github
           </a>
           <a
-            href={contact.linkedIn}
+            href={content[0].personalDetails.linkedInUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2"

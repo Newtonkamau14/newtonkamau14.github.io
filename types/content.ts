@@ -4,6 +4,9 @@ export type Content = [
       name: string;
       city: string;
       country: string;
+      email: string;
+      githubUrl: string;
+      linkedInUrl: string;
       resumeUrl: string;
     };
   },

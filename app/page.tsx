@@ -5,10 +5,13 @@ import { IoDocumentTextOutline } from "react-icons/io5";
 import { FaArrowRight } from "react-icons/fa6";
 import Card from "@/app/components/card";
 import { getProjects } from "@/lib/projects";
-import { Project } from "@/types/index";
+import {  Content, Project } from "@/types/index";
+import { getContent } from "@/lib/content";
 
 export default function Home() {
+  const content: Content = getContent();
   const projects = getProjects();
+
   return (
     <div>
       <main>
@@ -40,13 +43,13 @@ export default function Home() {
           </p>
 
           <div className="flex gap-4">
-            <a href="#" target="_blank">
+            <a href={content[0].personalDetails.linkedInUrl} target="_blank">
               <AiOutlineLinkedin size={24} />
             </a>
-            <a href="#" target="_blank">
+            <a href={content[0].personalDetails.githubUrl} target="_blank">
               <FiGithub size={24} />
             </a>
-            <a href="#" target="_blank">
+            <a href={content[0].personalDetails.resumeUrl} target="_blank">
               <IoDocumentTextOutline size={24} />
             </a>
           </div>
@@ -72,7 +75,7 @@ export default function Home() {
 
           <div className="flex flex-col gap-4 lg:w-3/5 lg:mx-auto pb-8">
             {projects.projects.map((project: Project) => (
-              <Card key={project.name} project={project}/>
+              <Card key={project.name} project={project} />
             ))}
           </div>
         </section>
