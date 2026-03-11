@@ -1,3 +1,2 @@
-export type { Contact } from "./contact";
-export type { Content } from "./content";
-export type { Project } from "./project";
+export type { Content } from "@/types/content";
+export type { Project } from "@/types/project";
